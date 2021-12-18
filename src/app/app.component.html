@@ -1,0 +1,62 @@
+<div class = "sumblock">
+  <h1>ADDITION TASK</h1>
+  <table>
+    <tr>
+      <td>
+        Enter first number
+      </td>
+      <td>
+        <input type="text" id="num1" #num1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Enter Second number
+      </td>
+      <td>
+        <input type="text" id="num2" #num2>
+      </td>
+    </tr>
+    <tr >
+      <input type="button" (click)="doSum(num1.value,num2.value)" value ="ADD" >
+    </tr>
+  </table>
+  <h2>Addition of two number is {{sum}}</h2>
+
+</div>
+
+<div>
+  <h1>
+    FINDING FACTORS TASK
+  </h1>
+  <table>
+    <tr>
+      <td>
+        Enter the number
+      </td>
+      <td>
+        <input type="text" id="factnum" #factnum>
+      </td>
+
+    </tr>
+    <tr>
+      <input type="button" (click)="calcfact(factnum.value)" value ="Calculate Factors">
+    </tr>
+  </table>
+  <h2>Factors are: </h2><br>
+  <h3>{{fact[0]}}</h3><br>
+  <h3>{{fact[1]}}</h3><br>
+  <h3>{{fact[2]}}</h3><br>
+  <h3>{{fact[3]}}</h3><br>
+  <h3>{{fact[4]}}</h3><br>
+  <table>
+    <tr *ngFor="let facto of fact">
+      <td>{{facto}}</td>
+    </tr>
+  </table>
+
+  number is {{per}}
+  percentage is {{per|percent}}
+</div>
+
+

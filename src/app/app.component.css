@@ -1,0 +1,13 @@
+input[type="button"]{
+
+    background-color: darkred;
+    color: darkseagreen;
+    border-color: cadetblue;
+    border-radius: 10px;
+    border-style: solid;
+    
+}
+
+.sumblock{
+    background-color: dimgrey;
+}
